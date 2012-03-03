@@ -1,0 +1,28 @@
+table {
+	padding: 2;
+	border-spacing: 3;
+}
+th {
+	background: #00FF00;
+}
+th.time {
+	width: 100px;
+	background: #DDDDDD;
+}
+th.day {
+	background: #0000CC;
+	text-align: left;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+td {
+	text-align: center;
+	vertical-align: middle;
+}
+td.busy {
+	background: #00FFFF;
+}
+td.free {
+	background: #FF00FF;
+	font-weight: bold;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/joda-time-2.0.jar" sourcepath="/home/zhoumo/workspace/CompSci108_Tivoo/lib/joda-time-2.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/home/zhoumo/workspace/CompSci108_Tivoo/resources/docs-joda/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar" sourcepath="/home/zhoumo/workspace/CompSci108_Tivoo/lib/dom4j-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/home/zhoumo/workspace/CompSci108_Tivoo/resources/docs-dom4j/apidocs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1-tests.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-1.1-beta-6.jar"/>
+	<classpathentry kind="lib" path="lib/rendersnake-1.4-sources.jar"/>
+	<classpathentry kind="lib" path="lib/rendersnake-1.4-test-sources.jar"/>
+	<classpathentry kind="lib" path="lib/rendersnake-1.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
