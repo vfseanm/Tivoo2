@@ -12,6 +12,7 @@ import org.joda.time.*;
 import org.joda.time.format.DateTimeFormat;
 
 import view.TivooView;
+import view.viewHTML;
 import writers.*;
 import model.*;
 //import view.*;
@@ -39,12 +40,13 @@ public class TivooController {
     	myMap.put("Conflicting Events", new ConflictingEventsWriter());
     }
     
-    public void view()
+    public void view() throws IOException
     {
     	File file = myView.getFile();
     	
-
-        JFrame frame = new JFrame(TITLE);
+    	viewHTML v = new viewHTML(file.toURI().toString());
+        
+    	JFrame frame = new JFrame(TITLE);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         frame.getContentPane().add(myView);
@@ -60,7 +62,7 @@ public class TivooController {
     }
     
     public void go(String destination, String detailDest, String writer, String startdate, String enddate, String key1, String key2, String key3)
-    {
+    		{
     	TivooWriter w = myMap.get(writer);
     	if (!startdate.isEmpty() && !enddate.isEmpty())
     	{
@@ -82,6 +84,16 @@ public class TivooController {
     	}
     	
     	doWrite(w, destination, detailDest);
+    	
+    	File f = new File(destination);
+    	try {
+    	viewHTML v = new viewHTML(f.toURI().toString());
+    	}
+    	catch (Exception ex)
+    	{
+    		System.out.println("error");
+    	}
+		
     }
    
     public void read(File file)

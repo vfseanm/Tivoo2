@@ -1,11 +1,14 @@
 package view;
 
 import java.io.File;
+import java.io.IOException;
 import java.awt.event.*;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 import javax.swing.*;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
 
 
 import controller.TivooController;
@@ -159,7 +162,7 @@ public class TivooView extends JPanel {
 			myController.go(destination.getText(), detailDest.getText(),
 					myWriters.getSelectedItem().toString(), startTime.getText(), endTime.getText(), 
 					keyWord1.getText(), keyWord2.getText(), keyWord3.getText());
-		}
+			}
 	}
 
 	private class AddFileAction implements ActionListener {
@@ -169,5 +172,7 @@ public class TivooView extends JPanel {
 			myController.read(f);
 		}
 	}
-
+	
+	 
 }
+
